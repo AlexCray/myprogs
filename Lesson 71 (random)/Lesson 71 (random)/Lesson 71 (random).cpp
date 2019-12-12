@@ -34,8 +34,5 @@ int main()
             std::cout << "\n";
     }
 
-
-    std::cin.clear();
-    std::cin.ignore(32767, '\n');
-    std::cin.get();
+    return 0;
 }
