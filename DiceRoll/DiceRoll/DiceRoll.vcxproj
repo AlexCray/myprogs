@@ -149,6 +149,15 @@
   <ItemGroup>
     <ClCompile Include="DiceRoll.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DiceRoll2.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\DiceRoll.ico" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,20 +1,29 @@
-﻿#include <iostream>
-#include <random> // для std::random_device и std::mt19937
+﻿#include <iostream> // для std::cout
+#include <random> // для std::random_device и std::uniform_int_distribution
+#include <cstdlib> // для system("cls");
+#include <string> // для std::getline
 
-int getRandomInteger(long long min, long long max)
+using namespace std;
+
+int getRandomInteger(int min, int max)
 {
-    std::random_device rd;
-    std::mt19937_64 mersenne(rd()); // инициализируем Вихрь Мерсенна случайным стартовым числом 
+    random_device rd;
+    uniform_int_distribution<int> uid(min, max);
 
-    unsigned long long g{ 18446744073709551615 };
-    static const long double fraction = 1.0 / (static_cast<long double>(g + 1.0));
-        
-    return static_cast<int>(mersenne() * fraction * (max - min + 1) + min);
+    return uid(rd);
 }
 
 int main()
 {
-    std::cout << getRandomInteger(1, 6) << '\n';
+    string choice;
+
+    do
+    {
+        system("cls");
+        cout << getRandomInteger(1, 6);
+        getRandomInteger(1, 6);
+        getline(cin, choice);
+    } while (choice == "");
 
     return 0;
 }
