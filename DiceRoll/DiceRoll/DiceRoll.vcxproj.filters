@@ -20,17 +20,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resource1.h">
+    <ClInclude Include="resource2.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="DiceRoll2.rc">
+    <ResourceCompile Include="DiceRoll3.rc">
       <Filter>Файлы ресурсов</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\DiceRoll.ico">
+    <Image Include="A:\Users\72art\Downloads\dice.ico">
       <Filter>Файлы ресурсов</Filter>
     </Image>
   </ItemGroup>
