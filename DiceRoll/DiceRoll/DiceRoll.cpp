@@ -15,13 +15,70 @@ int getRandomInteger(int min, int max)
 
 int main()
 {
+    int randomInt;
     string choice;
 
     do
     {
         system("cls");
-        cout << getRandomInteger(1, 6);
-        getRandomInteger(1, 6);
+        randomInt = getRandomInteger(1, 6);
+        switch(randomInt)
+        {
+            case 1:
+                cout << "===========" << endl;
+                cout << "|         |" << endl;
+                cout << "|         |" << endl;
+                cout << "|    *    |" << endl;
+                cout << "|         |" << endl;
+                cout << "|         |" << endl;
+                cout << "===========" << endl;
+                break;
+            case 2:
+                cout << "===========" << endl;
+                cout << "|         |" << endl;
+                cout << "|    *    |" << endl;
+                cout << "|         |" << endl;
+                cout << "|    *    |" << endl;
+                cout << "|         |" << endl;
+                cout << "===========" << endl;
+                break;
+            case 3:
+                cout << "===========" << endl;
+                cout << "|         |" << endl;
+                cout << "|  *      |" << endl;
+                cout << "|    *    |" << endl;
+                cout << "|      *  |" << endl;
+                cout << "|         |" << endl;
+                cout << "===========" << endl;
+                break;
+            case 4:
+                cout << "===========" << endl;
+                cout << "|         |" << endl;
+                cout << "|  *   *  |" << endl;
+                cout << "|         |" << endl;
+                cout << "|  *   *  |" << endl;
+                cout << "|         |" << endl;
+                cout << "===========" << endl;
+                break;
+            case 5:
+                cout << "===========" << endl;
+                cout << "|         |" << endl;
+                cout << "|  *   *  |" << endl;
+                cout << "|    *    |" << endl;
+                cout << "|  *   *  |" << endl;
+                cout << "|         |" << endl;
+                cout << "===========" << endl;
+                break;
+            case 6:
+                cout << "===========" << endl;
+                cout << "|         |" << endl;
+                cout << "|  *   *  |" << endl;
+                cout << "|  *   *  |" << endl;
+                cout << "|  *   *  |" << endl;
+                cout << "|         |" << endl;
+                cout << "===========" << endl;
+                break;
+        }
         getline(cin, choice);
     } while (choice == "");
 
